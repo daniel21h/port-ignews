@@ -7,6 +7,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  position: relative;
 }
 
 .hero {
@@ -41,5 +43,59 @@
 
   button {
     margin-top: 2.5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .contentContainer {
+    flex-direction: column;
+    padding: 4rem;
+
+    img {
+      display: none;
+    }
+  }
+
+  .background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -2;
+
+    height: 100%;
+    padding: 10rem 4rem;
+
+    background: url("/images/avatar.svg") no-repeat center 100%;
+    opacity: 0.1;
+  }
+}
+
+@media (max-width: 460px) {
+  .contentContainer {
+    padding: 0rem 2rem;
+    text-align: center;
+
+    justify-content: center;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+      font-size: 3rem;
+      line-height: 3rem;
+      font-weight: 900;
+      margin-top: 2.5rem;
+    }
+
+    p {
+      font-size: 1.25rem;
+      line-height: 1.5rem;
+      margin-top: 1.5rem;
+    }
   }
 }

@@ -30,4 +30,16 @@
   &:hover {
     filter: brightness(0.8);
   }
+
+  @media (max-width: 580px) {
+    p {
+      display: none;
+    }
+
+    svg:first-child {
+      margin-right: 0;
+    }
+
+    padding: 0 1rem;
+  }
 }

@@ -8,6 +8,8 @@
   max-width: 720px;
   margin: 5rem auto 0;
 
+  margin-bottom: 4rem;
+
   h1 {
     font-size: 3.5rem;
     font-weight: 900;
@@ -26,7 +28,8 @@
     font-size: 1.125rem;
     color: var(--gray-100);
 
-    p, ul {
+    p,
+    ul {
       margin: 1.5rem 0;
     }
 
@@ -61,6 +64,20 @@
 
     &:hover {
       text-decoration: underline;
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  .post {
+    max-width: 720px;
+    margin: 5rem auto 0;
+
+    margin-bottom: 4rem;
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 900;
     }
   }
 }
