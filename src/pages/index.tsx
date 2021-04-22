@@ -5,14 +5,7 @@ import { SubscribeButton } from '../components/SubscribeButton';
 
 import styles from './home.module.scss';
 
-interface HomeProps {
-  product: {
-    priceId: string;
-    amount: number;
-  }
-}
-
-export default function Home({ product }: HomeProps) {
+export default function Home() {
   return (
     <>
       <Head>
@@ -26,9 +19,11 @@ export default function Home({ product }: HomeProps) {
           <h1>News about the <span>React</span> world.</h1>
           <p>
             Get access to all the publications <br />
-            <span>for {product.amount} month</span>
+            <span>for $9.90 month</span>
           </p>
-          <SubscribeButton />
+          <div>
+            <SubscribeButton />
+          </div>
         </section>
 
         <img src="/images/avatar.svg" alt="Girl coding" />
@@ -36,3 +31,4 @@ export default function Home({ product }: HomeProps) {
     </>
   )
 }
+
